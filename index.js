@@ -9,3 +9,7 @@ app.listen(porta, () => {
     console.log ('Servidor iniciando na porta ' + porta);
     // console.log(`Servidor iniciando na porta $(porta)`);
 });
+
+app.get('/', (request, response) => {
+    response.send('Hello World');
+});
